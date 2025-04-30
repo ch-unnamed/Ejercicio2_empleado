@@ -8,7 +8,10 @@ namespace Clases
 {
     public class BonoPorAntiguedad
     {
-		
+	    public float BonoARecibir(Cargo objCargo,Empleado objEmpleado)
+		{
+			return (float) (objCargo.SueldoBasico() * 0.07 * objEmpleado.Antiguedad);
+		}
 
 	}
 }

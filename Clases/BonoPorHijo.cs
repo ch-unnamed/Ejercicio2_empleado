@@ -8,6 +8,9 @@ namespace Clases
 {
     public class BonoPorHijo
     {
-        public float BonoARecibir();
+        public float BonoARecibir(Empleado objEmpleado)
+        {
+            return (float)(100 * objEmpleado.CantidadDeHijos);
+        }
     }
 }
